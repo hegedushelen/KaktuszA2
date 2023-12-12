@@ -1,0 +1,75 @@
+body {
+    max-width: 85%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    color: black;
+    background-color: pink;
+    margin: 0 auto;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "box"
+    "footer";
+    border: solid 3px salmon;
+    border-radius: 10px;
+    margin: 0 auto;
+    gap: 10px;
+}
+header {
+    grid-area: header;
+    background: red;
+    border: solid 3px salmon;
+    border-radius: 10px;
+    text-align: center;
+}
+nav {
+    grid-area: nav;
+    border: solid 3px salmon;
+    border-radius: 10px;
+    text-align: center;
+}
+aside {
+    grid-area: aside;
+}
+article {
+    grid-area: article;
+}
+footer {
+    grid-area: footer;
+    border: solid 3px salmon;
+    border-radius: 10px;
+}
+#box {
+    grid-area: box;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "aside article";
+    border: solid 3px salmon;
+    border-radius: 10px;
+}
+ul{
+    text-decoration: none;
+}
+li {
+    display: inline;
+    padding: 3vw;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+#kep {
+    padding: 15px 0px 0px 15px;
+}
+p {
+    text-align: justify;
+    padding-right: 15px;
+}
+#kozep {
+    text-align: center;
+}

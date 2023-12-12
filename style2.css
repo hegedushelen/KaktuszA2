@@ -1,0 +1,95 @@
+body {
+    max-width: 85%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    color: black;
+    background-color: pink;
+    margin: 0 auto;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "box"
+    "footer";
+    border: solid 3px salmon;
+    border-radius: 10px;
+    margin: 0 auto;
+    gap: 10px;
+}
+header {
+    grid-area: header;
+    background: red;
+    border: solid 3px salmon;
+    border-radius: 10px;
+    text-align: center;
+}
+nav {
+    grid-area: nav;
+    border: solid 3px salmon;
+    border-radius: 10px;
+    text-align: center;
+}
+footer {
+    grid-area: footer;
+    border: solid 3px salmon;
+    border-radius: 10px;
+}
+#box {
+    grid-area: box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "kep1 kep2 kep3"
+    "kep4 kep5 kep6"
+    "kep7 kep8 kep9";
+    border: solid 3px salmon;
+    border-radius: 10px;
+}
+#kep1 {
+    grid-area: kep1;
+}
+#kep2 {
+    grid-area: kep2;
+}
+#kep3 {
+    grid-area: kep3;
+}
+#kep4 {
+    grid-area: kep4;
+}
+#kep5 {
+    grid-area: kep5;
+}
+#kep6 {
+    grid-area: kep6;
+}
+#kep7 {
+    grid-area: kep7;
+}
+#kep8 {
+    grid-area: kep8;
+}
+#kep9 {
+    grid-area: kep9;
+}
+ul{
+    text-decoration: none;
+}
+li {
+    display: inline;
+    padding: 3vw;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+#kozep {
+    text-align: center;
+}
+#box>div{
+    margin: 0 auto;
+    padding: 10px;
+}
